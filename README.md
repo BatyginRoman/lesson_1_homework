@@ -65,32 +65,32 @@
 ## Решение задачи 2
 
 Баг репорт 1.
-Заголовок: Возможность ввода недопустимого формата имени на странице http://testingchallenges.thetestingmap.org/index.php в поле First Name.
+Заголовок: Возможность ввода недопустимого формата имени на странице http://testingchallenges.thetestingmap.org/index.php в поле First Name. Недопустимый формат - символы, не принадлежащие английскому алфавиту.
 Начальные условия: Возможность ввода русских букв.
 Шаги воспроизведения:
  - Открыть в браузере страницу http://testingchallenges.thetestingmap.org/index.php
  - Ввести в поле First Name значение: Рома
  - Нажать кнопку Submit
-Ожидаемый результат: Внизу страницы отображается: Non ASCII, Other chars then alphabetic, Average value
+Ожидаемый результат: Внизу текущей страницы отображается диагностическое сообщение с текстом: Non ASCII, Other chars then alphabetic, Average value
 Реальный результат: В поле Confirmation message отображается: Your username is Gheorghe_Рома.
 
 Баг репорт 2.
-Заголовок: Возможность ввода недопустимого формата имени на странице http://testingchallenges.thetestingmap.org/index.php в поле First Name.
+Заголовок: Возможность ввода недопустимого формата имени на странице http://testingchallenges.thetestingmap.org/index.php в поле First Name. Недопустимый формат - пустая строка.
 Начальные условия: Возможность оставить поле незаполненным.
 Шаги воспроизведения:
  - Открыть в браузере страницу http://testingchallenges.thetestingmap.org/index.php
  - Нажать кнопку Submit
-Ожидаемый результат: Внизу страницы отображается: Empty value
+Ожидаемый результат: Внизу текущей страницы отображается диагностическое сообщение с текстом: Empty value
 Реальный результат: В поле Confirmation message отображается: Your username is Gheorghe_.
 
 Баг репорт 3.
-Заголовок: Возможность ввода недопустимого формата имени на странице http://testingchallenges.thetestingmap.org/index.php в поле First Name.
+Заголовок: Возможность ввода недопустимого формата имени на странице http://testingchallenges.thetestingmap.org/index.php в поле First Name. Недопустимый формат - наличие пробелов в имени.
 Начальные условия: Возможность ввода пробелов в начале, конце и середине имени.
 Шаги воспроизведения:
  - Открыть в браузере страницу http://testingchallenges.thetestingmap.org/index.php
  - Ввести в поле First Name значение:   Ro  ma  
  - Нажать кнопку Submit
-Ожидаемый результат: Внизу страницы отображается: Space in middle, space values at the end, space values at the beginning.
+Ожидаемый результат: Внизу текущей страницы отображается диагностическое сообщение с текстом: Space in middle, space values at the end, space values at the beginning.
 Реальный результат: В поле Confirmation message отображается: Your username is Gheorghe_  Ro  ma  .
 
 Баг репорт 4.
