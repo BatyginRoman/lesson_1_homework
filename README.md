@@ -94,7 +94,7 @@
 Реальный результат: В поле Confirmation message отображается: Your username is Gheorghe_  Ro  ma  .
 
 Баг репорт 4.
-Заголовок: Возможность ввода недопустимого формата имени на странице http://testingchallenges.thetestingmap.org/index.php в поле First Name.
+Заголовок: Возможность ввода недопустимого формата имени на странице http://testingchallenges.thetestingmap.org/index.php в поле First Name. Недопустимый формат - заглавная буква нижнего регистра.
 Начальные условия: Возможность ввода имени, начинающегося с маленькой буквы.
 Шаги воспроизведения:
  - Открыть в браузере страницу http://testingchallenges.thetestingmap.org/index.php
